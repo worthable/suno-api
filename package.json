@@ -1,7 +1,7 @@
 {
   "name": "suno-api",
-  "version": "0.8.0",
-  "description": "An unofficial lightweight TypeScript client for interacting with Suno's AI-powered music generation service.",
+  "version": "0.9.1",
+  "description": "The Suno's AI-powered music generation unofficial API.",
   "keywords": [
     "Suno",
     "AI",
@@ -12,9 +12,16 @@
     "API",
     "clips",
     "songs",
-    "lyrics"
+    "lyrics",
+    "Suno api",
+    "Suno sdk",
+    "Suno client"
   ],
   "author": "Anton <anton.it@icloud.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/worthable/suno-sdk"
+  },
   "type": "module",
   "main": "dist/index.min.cjs",
   "module": "dist/index.min.mjs",
