@@ -1,7 +1,20 @@
 {
   "name": "suno-api",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.8.0",
+  "description": "An unofficial lightweight TypeScript client for interacting with Suno's AI-powered music generation service.",
+  "keywords": [
+    "Suno",
+    "AI",
+    "audio",
+    "music",
+    "generation",
+    "typescript",
+    "API",
+    "clips",
+    "songs",
+    "lyrics"
+  ],
+  "author": "Anton <anton.it@icloud.com>",
   "type": "module",
   "main": "dist/index.min.cjs",
   "module": "dist/index.min.mjs",
@@ -21,11 +34,16 @@
     "lint": "eslint '**/*.{ts,js}'",
     "test": "jest"
   },
-  "keywords": [],
-  "author": "",
   "license": "MIT",
   "dependencies": {
-    "@changesets/cli": "^2.27.9"
+    "@changesets/cli": "^2.27.9",
+    "@types/lodash": "^4.17.10",
+    "@types/user-agents": "^1.0.4",
+    "axios": "^1.7.7",
+    "axios-cookiejar-support": "^5.0.3",
+    "lodash": "^4.17.21",
+    "tough-cookie": "^5.0.0",
+    "user-agents": "^1.1.325"
   },
   "devDependencies": {
     "@jest/types": "^29.6.3",
