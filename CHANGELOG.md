@@ -1,5 +1,11 @@
 # suno-api
 
+## 0.9.3
+
+### Patch Changes
+
+- bb2cf71: fix getFeed returns wrong payload
+
 ## 0.9.2
 
 ### Patch Changes
