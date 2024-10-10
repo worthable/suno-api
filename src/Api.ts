@@ -203,7 +203,7 @@ export class Api {
       })
     ).data
 
-    const ids = clips.map(({ id }: IClip) => id)
+    const ids = clips.map(({ id }: IClip) => id).join(',')
 
     return await this.waitGeneration<IClip[]>(this.getFeed.bind(this, { ids }), options, clips)
   }
@@ -287,8 +287,8 @@ export class Api {
    * @param songIds An optional array of song IDs to retrieve information for.
    * @returns A promise that resolves to an array of AudioInfo objects.
    */
-  public async getFeed(params: { ids?: string[] }): Promise<IClip[]> {
-    return (await this.apiClient.get(`/feed/`, { params })).data
+  public async getFeed(params: { ids?: string }): Promise<IClip[]> {
+    return (await this.apiClient.get(`/feed/v2`, { params })).data
   }
 
   /**
