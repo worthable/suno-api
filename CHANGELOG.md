@@ -1,5 +1,11 @@
 # suno-api
 
+## 0.9.2
+
+### Patch Changes
+
+- 63e8d93: Fix get feed ignores ids and return all
+
 ## 0.9.0
 
 ### Minor Changes
