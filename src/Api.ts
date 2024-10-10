@@ -288,7 +288,7 @@ export class Api {
    * @returns A promise that resolves to an array of AudioInfo objects.
    */
   public async getFeed(params: { ids?: string }): Promise<IClip[]> {
-    return (await this.apiClient.get(`/feed/v2`, { params })).data
+    return (await this.apiClient.get(`/feed/v2`, { params })).data.clips
   }
 
   /**
