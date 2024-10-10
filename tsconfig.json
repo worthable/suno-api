@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "./dist/types",
+    "emitDeclarationOnly": false,
+    "outDir": "./dist",
+    "strictPropertyInitialization": false,
+    "noImplicitAny": true,
+    "target": "esnext",
+    "module": "esnext",
+    "baseUrl": ".",
+    "moduleResolution": "node",
+    "lib": ["esnext", "esnext.asynciterable", "dom"],
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "sourceMap": false,
+    "strict": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": false,
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    },
+    "skipLibCheck": true,
+    "useUnknownInCatchVariables": false,
+    "types": ["@types/node", "jest"]
+  },
+  "include": ["src/**/*.ts", "jest.config.js"],
+  "exclude": ["node_modules", "dist", "**/*.md", "**/rollup.config.js"]
+}
